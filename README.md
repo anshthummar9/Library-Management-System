@@ -74,3 +74,11 @@ library-management-system/
 
 2. **Frontend**:
     Open `frontend/index.html` in any modern web browser.
+
+## 📖 API Documentation
+The backend provides several REST endpoints:
+* Books: `GET /api/books`, `POST /api/books, DELETE /api/books/{id}`, `GET /api/books/search/title?title={query}`.
+
+* Members: `GET /api/members`, `POST /api/members`, `PUT /api/members/{id}`, `DELETE /api/members/{id}`.
+
+* Transactions:`POST /api/transactions/issue?bookId={id}&memberId={id}`, `PUT /api/transactions/return/{id}`, `GET /api/transactions/overdue`.
